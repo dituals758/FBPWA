@@ -1,4 +1,4 @@
-import { Helpers } from '.pwa/utils/helpers.js';
+import { Helpers } from './pwa/utils/helpers.js';
 
 class PWAInstaller {
     constructor() {

@@ -1,9 +1,9 @@
 // Главный файл приложения Flappy Bird PWA
-import { GameEngine } from './game/engine.js';
-import { PWAInstaller } from './pwa/install.js';
-import { OfflineManager } from './pwa/offline.js';
-import { Storage } from './utils/storage.js';
-import { Helpers } from './utils/helpers.js';
+import { GameEngine } from './js/game/engine.js';
+import { PWAInstaller } from './js/pwa/install.js';
+import { OfflineManager } from './js/pwa/offline.js';
+import { Storage } from './js/utils/storage.js';
+import { Helpers } from './js/utils/helpers.js';
 
 class FlappyBirdApp {
     constructor() {
@@ -153,7 +153,7 @@ class FlappyBirdApp {
         
         try {
             const registration = await navigator.serviceWorker.register('./sw.js', {
-                scope: '/',
+                scope: './',
                 updateViaCache: 'none'
             });
             
