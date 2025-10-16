@@ -152,7 +152,7 @@ class FlappyBirdApp {
         }
         
         try {
-            const registration = await navigator.serviceWorker.register('./sw.js', {
+            const registration = await navigator.serviceWorker.register('https://dituals758.github.io/FBPWA/sw.js', {
                 scope: './',
                 updateViaCache: 'none'
             });
