@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Flappy Bird PWA</title>
+    <meta name="theme-color" content="#0a3d62">
+    <meta name="description" content="Современный PWA клон Flappy Bird">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Flappy Bird">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Icons -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+    
+    <!-- Preload critical CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="app">
+        <div id="game-container" role="main" aria-label="Игра Flappy Bird">
+            <canvas 
+                id="game-canvas" 
+                width="320" 
+                height="480"
+                aria-label="Игровое поле Flappy Bird"
+                role="img"
+            >
+                Ваш браузер не поддерживает Canvas. Пожалуйста, обновите браузер.
+            </canvas>
+            
+            <div id="score-display" aria-live="polite" aria-atomic="true">0</div>
+            
+            <div id="start-screen" class="screen" role="dialog" aria-label="Начальный экран">
+                <div class="screen-content">
+                    <h1>Flappy Bird</h1>
+                    <p>Нажимайте для взлета птички</p>
+                    <p>Избегайте труб и не падайте!</p>
+                    <button id="start-button" class="btn-primary" aria-label="Начать игру">
+                        Начать игру
+                    </button>
+                </div>
+            </div>
+            
+            <div id="game-over" class="screen" role="dialog" aria-label="Конец игры" hidden>
+                <div class="screen-content">
+                    <h2>Игра окончена!</h2>
+                    <p id="final-score">Ваш счет: 0</p>
+                    <p id="high-score">Рекорд: 0</p>
+                    <button id="restart-button" class="btn-primary" aria-label="Играть снова">
+                        Играть снова
+                    </button>
+                </div>
+            </div>
+            
+            <div id="instructions" aria-hidden="true">
+                Нажмите для взлета
+            </div>
+        </div>
+        
+        <button 
+            id="install-button" 
+            class="install-btn" 
+            aria-label="Установить приложение"
+            hidden
+        >
+            <span aria-hidden="true">📱</span>
+        </button>
+
+        <!-- Loading indicator -->
+        <div id="loading" class="loading-indicator">
+            <div class="spinner"></div>
+            <p>Загрузка игры...</p>
+        </div>
+    </div>
+
+    <!-- Game JS -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

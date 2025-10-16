@@ -1,0 +1,28 @@
+{
+  "name": "Flappy Bird PWA",
+  "short_name": "FlappyBird",
+  "description": "Современный PWA клон классической игры Flappy Bird",
+  "start_url": "./",
+  "display": "fullscreen",
+  "background_color": "#87CEEB",
+  "theme_color": "#0a3d62",
+  "orientation": "portrait",
+  "categories": ["game", "entertainment"],
+  "lang": "ru-RU",
+  "scope": "/",
+  "id": "/",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMwYTNkNjIiLz4KPHBhdGggZD0iTTk2IDUwQzY2IDUwIDQyIDc0IDQyIDEwNFYxMjBDNDIgMTUwIDY2IDE3NCA5NiAxNzRDMTI2IDE3NCAxNTAgMTUwIDE1MCAxMjBWMTBDMTUwIDgwIDEyNiA1NCA5NiA1NFoiIGZpbGw9IiNGRkQ3MDAiLz4KPGNpcmNsZSBjeD0iODAiIGN5PSI5MCIgcj0iOCIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSBjeD0iMTEyIiBjeT0iOTAiIHI9IjgiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9Ijg0IiBjeT0iODYiIHI9IjQiIGZpbGw9ImJsYWNrIi8+CjxjaXJjbGUgY3g9IjExNiIgY3k9Ijg2IiByPSI0IiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNzAgMTA2SDEyMkMxMjIgMTA2IDExNiAxMTYgOTYgMTE2Qzc2IDExNiA3MCAxMDYgNzAgMTA2WiIgZmlsbD0iI0ZGNjMzMyIvPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiMwYTNkNjIiLz4KPHBhdGggZD0iTTI1NiAxMzBDMTc0IDEzMCAxMTIgMTk0IDExMiAyNzZWMzIwQzExMiA0MDIgMTc0IDQ2NCAyNTYgNDY0QzMzOCA0NjQgNDAwIDQwMiA0MDAgMzIwVjI4QzQwMCAyMTQgMzM4IDE0NCAyNTYgMTQ0WiIgZmlsbD0iI0ZGRDcwMCIvPgo8Y2lyY2xlIGN4PSIyMTQiIGN5PSIyNDAiIHI9IjIyIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIyOTgiIGN5PSIyNDAiIHI9IjIyIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIyMjQiIGN5PSIyMzAiIHI9IjExIiBmaWxsPSJibGFjayIvPgo8Y2lyY2xlIGN4PSIzMDgiIGN5PSIyMzAiIHI9IjExIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTg2IDI4MkgzMjZDMzI2IDI4MiAzMDggMzA4IDI1NiAzMDhDMjA0IDMwOCAxODYgMjgyIDE4NiAyODJaIiBmaWxsPSIjRkY2MzMzIi8+Cjwvc3ZnPgo=",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
