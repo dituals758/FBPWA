@@ -1,4 +1,4 @@
-import { Helpers } from '../utils/helpers.js';
+import { Helpers } from './js/utils/helpers.js';
 
 class Pipes {
     constructor(canvasWidth, canvasHeight) {

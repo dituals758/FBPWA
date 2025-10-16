@@ -1,15 +1,15 @@
 // Service Worker для Flappy Bird PWA
-const CACHE_NAME = 'flappy-bird-v1.0';
-const STATIC_CACHE = 'static-v1';
-const DYNAMIC_CACHE = 'dynamic-v1';
+const CACHE_NAME = 'flappy-bird-v1.1';
+const STATIC_CACHE = 'static-v1.1';
+const DYNAMIC_CACHE = 'dynamic-v1.1';
 
 // Критические ресурсы
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/css/style.css',
-  '/js/app.js',
-  '/manifest.json'
+  './',
+  './index.html',
+  './css/style.css',
+  './js/app.js',
+  './manifest.json'
 ];
 
 // Установка Service Worker
@@ -94,7 +94,7 @@ self.addEventListener('fetch', (event) => {
         
         // Фолбэк для HTML-страниц
         if (event.request.destination === 'document') {
-          const fallback = await caches.match('/index.html');
+          const fallback = await caches.match('./index.html');
           if (fallback) return fallback;
         }
         
@@ -129,8 +129,8 @@ self.addEventListener('push', (event) => {
   const data = event.data.json();
   const options = {
     body: data.body || 'Новое уведомление от Flappy Bird!',
-    icon: '/icons/icon-192.png',
-    badge: '/icons/icon-192.png',
+    icon: './icons/icon-192.png',
+    badge: './icons/icon-192.png',
     vibrate: [100, 50, 100],
     data: {
       url: data.url || '/'

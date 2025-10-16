@@ -1,7 +1,7 @@
-import { Bird } from './bird.js';
-import { Pipes } from './pipes.js';
-import { CollisionDetector } from './collision.js';
-import { Helpers } from '../utils/helpers.js';
+import { Bird } from './js/game/bird.js';
+import { Pipes } from './js/game/pipes.js';
+import { CollisionDetector } from './js/game/collision.js';
+import { Helpers } from './js/utils/helpers.js';
 
 class GameEngine {
     constructor(canvas) {

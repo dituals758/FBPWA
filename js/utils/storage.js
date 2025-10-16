@@ -238,7 +238,7 @@ class Storage {
     
     // Migration helper for future updates
     migrateData() {
-        const dataVersion = this.get('dataVersion', '1.0');
+        const dataVersion = this.get('dataVersion', '1.1');
         
         if (dataVersion === '1.0') {
             // Example migration logic
@@ -248,7 +248,7 @@ class Storage {
                 this.remove('highscore');
             }
             
-            this.set('dataVersion', '1.1');
+            this.set('dataVersion', '1.2');
         }
     }
 }
