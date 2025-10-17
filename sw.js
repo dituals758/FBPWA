@@ -1,7 +1,7 @@
 // Service Worker для Flappy Bird PWA
-const CACHE_NAME = 'flappy-bird-v1.1.3';
-const STATIC_CACHE = 'static-v1.1.3';
-const DYNAMIC_CACHE = 'dynamic-v1.1.3';
+const CACHE_NAME = 'flappy-bird-v1.1.4';
+const STATIC_CACHE = 'static-v1.1.4';
+const DYNAMIC_CACHE = 'dynamic-v1.1.4';
 
 // Критические ресурсы
 const STATIC_ASSETS = [

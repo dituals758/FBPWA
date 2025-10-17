@@ -1,9 +1,9 @@
 // Главный файл приложения Flappy Bird PWA
-import { GameEngine } from '../game/engine.js';
-import { PWAInstaller } from '../pwa/install.js';
-import { OfflineManager } from '../pwa/offline.js';
-import { Storage } from '../utils/storage.js';
-import { Helpers } from '../utils/helpers.js';
+import { GameEngine } from 'https://dituals758.github.io/FBPWA/js/game/engine.js';
+import { PWAInstaller } from 'https://dituals758.github.io/FBPWA/js/pwa/install.js';
+import { OfflineManager } from 'https://dituals758.github.io/FBPWA/js/pwa/offline.js';
+import { Storage } from 'https://dituals758.github.io/FBPWA/js/utils/storage.js';
+import { Helpers } from 'https://dituals758.github.io/FBPWA/js/utils/helpers.js';
 
 class FlappyBirdApp {
     constructor() {
